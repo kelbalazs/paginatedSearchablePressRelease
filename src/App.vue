@@ -32,8 +32,6 @@
 <script>
 import axios from "axios";
 import moment from "moment"
-
-
 export default {
   data() {
     return {
@@ -63,7 +61,6 @@ export default {
       }
   
   
-
   },
     computed : {
     filteredArticles() {
@@ -75,7 +72,6 @@ export default {
     })
     
 }
-
   }
 };
 </script>
@@ -118,45 +114,37 @@ li img {
   text-align: center;
   box-shadow: thistle;
 }
-
 #title {
   font-size: 20px;
   font-style: italic;
   font-weight: bold;
 }
-
 #date {
   font-size: 30px;
 }
-
 .search-wrapper{
   width: 120%;
   margin-bottom: 20px;
   margin-left: 25px;
-
 }
-
 #article {
   font-size: 10px;
 }
-.search-bar{
-display: block;
-width: 25%;
-padding: 10px;
-font-size: 25px;
-appearance: none;
-border: none;
-outline: none;
-background-color:rgb(169, 169, 169, 0.85);
-border-radius:15px 15px 15px 15px;
-transition: 0.5s;
+.search-bar {
+  border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 10px;
+  width: 50%;
+  margin-left: 10px;
+  padding: 0.5rem;
 }
-
-.search-bar:focus{
-  border-radius: 5px 5px 5px 5px;
-
+.search-bar:focus {
+  box-shadow: 0 0 15px 5px #b0e0ee;
+  border: 2px solid #bebede;
 }
-
+.search-box:not(:valid) ~ .close-icon {
+  display: none;
+}
 ul.paginate-links.items li {
   display: inline-block;
   margin: 5px;
